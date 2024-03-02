@@ -1,6 +1,6 @@
 # PDF Text Extraction and Markdown Conversion Tool
 
-This project is designed to extract text from PDF files and convert it into either plain text or markdown format. It is modular in nature, consisting of several key components: `PDFBot.js` for the core functionality, `cli.js` for the command-line interface, and utility scripts such as `read.js` and `strUtils.js` for text processing and interaction with OpenAI's GPT models.
+This project is designed to extract text from PDF files and convert it into either plain text or markdown format. It consists of several key modules: `PDFBot.js` for the core functionality, `cli.js` for the command-line interface, and utility scripts such as `read.js` and `strUtils.js` for text processing and interaction with OpenAI's GPT models.
 
 ## Overview
 
@@ -37,22 +37,20 @@ To use the CLI tool, navigate to the project directory in your terminal and run:
 node cli.js [path to local pdf] [output format]
 ```
 
-- `[path to local pdf]`: The relative or absolute path to the PDF file you want to process.
+- `[path to local pdf]`: The bsolute path to the PDF file you want to process.
 - `[output format]`: Specify `md` for markdown or `txt` for plain text. Defaults to `txt` if not specified.
 
 Example:
 
 ```bash
-node cli.js ./documents/sample.pdf md
+node cli.js ~/documents/sample.pdf md
 ```
 
-This command will convert `sample.pdf` to markdown and save the output in the same directory with a `.md` extension.
+This command will convert `sample.pdf` to markdown and save the output in the same directory with as `sample.md`.
 
 ### Development Notes
 
 - The project uses the `pdf-parse-fork` library for PDF text extraction and OpenAI's Chat API for converting text to markdown.
-- The `SentenceGrabber` class in `strUtils.js` improves sentence extraction by accounting for common abbreviations.
-- Ensure your OpenAI API key has sufficient permissions and quota to use the chat completion API for markdown conversion.
 
 ## Contributing
 
