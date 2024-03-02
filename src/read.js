@@ -83,15 +83,4 @@ async function pdfTextToMarkdown(pathToPdf, write = true) {
   };
 }
 
-async function main() {
-  console.time("summarize pdf");
-  const { estCost } = await pdfTextToMarkdown(
-    "/Users/blaze/Development/experimental/pdf-reader/test_inputs/gopdf-1.pdf",
-  );
-  console.timeEnd("summarize pdf");
-
-  console.log("Est api charge: $" + estCost.toFixed(4));
-}
-main();
-
 module.exports = { pdfTextToMarkdown, getPdfText };
