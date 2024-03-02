@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "openai": "^4.28.4",
+    "pdf-parse": "^1.1.1",
+    "pdf-parse-fork": "^1.2.0"
+  },
+  "name": "pdf-reader",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node cli.js example.pdf txt 0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
