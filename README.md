@@ -54,4 +54,4 @@ This command will convert `sample.pdf` to markdown and save the output in the sa
 
 ## Contributing
 
-Contributions to improve the tool or extend its functionality are welcome. Please follow the standard GitHub fork-and-pull request workflow.
+Contributions to improve the tool or extend its functionality are welcome :) 
